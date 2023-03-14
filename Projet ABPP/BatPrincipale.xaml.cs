@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Projet_ABPP
 {
     /// <summary>
-    /// Logique d'interaction pour Carte.xaml
+    /// Logique d'interaction pour BatPrincipale.xaml
     /// </summary>
-    public partial class Carte : Window
+    public partial class BatPrincipale : Window
     {
-        public Carte()
+        public BatPrincipale()
         {
             InitializeComponent();
         }
