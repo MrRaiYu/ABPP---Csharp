@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projet_ABPP"
         mc:Ignorable="d"
-        Title="Carte" Height="450" Width="800">
-    <Grid>
-        
+        Title="Carte" Height="692" Width="1232">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF5EC584" Offset="0.003"/>
+            <GradientStop Color="#FF28ED58" Offset="0.993"/>
+            <GradientStop Color="#FF4AC76A" Offset="0.797"/>
+            <GradientStop Color="#FF57CE81" Offset="0.05"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Margin="29,0,6,0">
+        <Image Margin="400,113,-72,105" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.123"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="300" UriSource="/image/map.png" />
+            </Image.Source>
+        </Image>
+
     </Grid>
 </Window>

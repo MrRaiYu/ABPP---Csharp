@@ -9,5 +9,8 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assemblyinfo.cs")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/login.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/map.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/send.png")]
 
 

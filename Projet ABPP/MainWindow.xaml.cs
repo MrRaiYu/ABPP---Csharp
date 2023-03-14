@@ -24,5 +24,12 @@ namespace Projet_ABPP
         {
             InitializeComponent();
         }
+
+        private void Send(object sender, MouseButtonEventArgs e)
+        {
+            Carte map = new Carte(); 
+            map.Show();
+
+        }
     }
 }

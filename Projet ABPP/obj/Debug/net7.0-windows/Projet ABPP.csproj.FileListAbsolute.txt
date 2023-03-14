@@ -1,13 +1,20 @@
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\bin\Debug\net7.0-windows\Projet ABPP.exe
+C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\bin\Debug\net7.0-windows\AssemblyInfo.cs
+C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\bin\Debug\net7.0-windows\Image\login.png
+C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\bin\Debug\net7.0-windows\Image\map.png
+C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\bin\Debug\net7.0-windows\Image\send.png
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\bin\Debug\net7.0-windows\Projet ABPP.deps.json
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\bin\Debug\net7.0-windows\Projet ABPP.runtimeconfig.json
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\bin\Debug\net7.0-windows\Projet ABPP.dll
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\bin\Debug\net7.0-windows\Projet ABPP.pdb
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\Projet ABPP.csproj.AssemblyReference.cache
+C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\Carte.g.cs
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\MainWindow.g.cs
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\Projet ABPP_Content.g.cs
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\Projet ABPP_MarkupCompile.cache
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\Projet ABPP_MarkupCompile.lref
+C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\Carte.baml
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\MainWindow.baml
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\Projet ABPP.g.resources
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\Projet ABPP.GeneratedMSBuildEditorConfig.editorconfig
@@ -19,5 +26,3 @@ C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\refint\P
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\Projet ABPP.pdb
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\Projet ABPP.genruntimeconfig.cache
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\ref\Projet ABPP.dll
-C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\bin\Debug\net7.0-windows\AssemblyInfo.cs
-C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\Projet ABPP_Content.g.cs
