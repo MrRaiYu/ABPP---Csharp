@@ -26,3 +26,5 @@ C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\refint\P
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\Projet ABPP.pdb
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\Projet ABPP.genruntimeconfig.cache
 C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\ref\Projet ABPP.dll
+C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\BatPrincipale.g.cs
+C:\Users\bilal\Source\Repos\Csharp\Projet ABPP\obj\Debug\net7.0-windows\BatPrincipale.baml
