@@ -25,6 +25,7 @@ namespace Projet_ABPP
         {
             Carte map = new Carte();
             map.Show();
+            this.Close();
         }
     }
 }

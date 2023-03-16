@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projet_ABPP"
         mc:Ignorable="d"
-        Title="MainWindow" Height="515" Width="1000" MaxHeight="550" MaxWidth="1000" MinHeight="550" MinWidth="550" Margin="-14,0,0,0" ResizeMode="NoResize">
+        Title="MainWindow" Height="498" Width="999" MaxHeight="550" MaxWidth="1000" MinHeight="550" MinWidth="550" Margin="-14,0,0,0" ResizeMode="NoResize">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-            <GradientStop Color="#FFC5B7F7" Offset="0.013"/>
-            <GradientStop Color="#FF5F3ED8" Offset="1"/>
+            <GradientStop Color="White" Offset="0.013"/>
+            <GradientStop Color="#FF3F5071" Offset="1"/>
         </LinearGradientBrush>
     </Window.Background>
     <Border CornerRadius="52" BorderThickness="10" BorderBrush="Transparent" Height="NaN" Margin="0,0,89,103" Width="NaN">
 
-        <Border CornerRadius="35" BorderThickness="20" Margin="120,29,39,-3" Width="NaN">
+        <Border CornerRadius="35" BorderThickness="20" Margin="156,29,54,-3" Width="NaN">
             <Border.BorderBrush>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                     <GradientStop Color="LightGreen" Offset="0.0"/>
@@ -22,11 +22,14 @@
                     <GradientStop Color="#1E91A5" Offset="1.0"/>
                 </LinearGradientBrush>
             </Border.BorderBrush>
-            <Grid Margin="-2,-4,-3,0" Height="350" Width="NaN" VerticalAlignment="Top">
+            <Grid Margin="-4,-4,-9,0" Height="350" Width="NaN" VerticalAlignment="Top">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="44*"/>
                     <RowDefinition Height="91*"/>
-                    <RowDefinition Height="215*"/>
+                    <RowDefinition Height="27*"/>
+                    <RowDefinition Height="14*"/>
+                    <RowDefinition Height="56*"/>
+                    <RowDefinition Height="118*"/>
                 </Grid.RowDefinitions>
                 <Grid.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
@@ -36,7 +39,7 @@
                     </LinearGradientBrush>
 
                 </Grid.Background>
-                <Image Margin="191,43,162,208" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="3">
+                <Image Margin="191,43,162,20" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="3">
                     <Image.Source>/Image/login.png</Image.Source>
                     <Image.RenderTransform>
                         <TransformGroup>
@@ -48,7 +51,7 @@
                     </Image.RenderTransform>
 
                 </Image>
-                <Image Margin="471,132,-5,38" RenderTransformOrigin="0.5,0.5" Grid.Row="2" MouseDown="Send">
+                <Image Margin="471,35,-5,38" RenderTransformOrigin="0.5,0.5" Grid.Row="5" MouseDown="Send">
                     <Image.Source>/Image/send.png</Image.Source>
                     <Image.RenderTransform>
                         <TransformGroup>
@@ -60,22 +63,22 @@
                     </Image.RenderTransform>
 
                 </Image>
-                <TextBox Margin="253,64,225,124" Grid.Row="2" TextAlignment="Center" BorderBrush="Black">
+                <TextBox x:Name="Login" Margin="253,23,225,6" Grid.Row="4" TextAlignment="Center" BorderBrush="Black">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="13"/>
                         </Style>
                     </TextBox.Resources>
                 </TextBox>
-                <TextBox  Margin="249,133,220,55" Grid.Row="2" BorderBrush="Black" TextAlignment="Center">
+                <TextBox  x:Name="Motdepasse" Margin="249,36,220,55" Grid.Row="5" BorderBrush="Black" TextAlignment="Center">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="13"/>
                         </Style>
                     </TextBox.Resources>
                 </TextBox>
-                <TextBox HorizontalAlignment="Left" Height="24" Margin="253,44,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="44" Background="{x:Null}" BorderBrush="{x:Null}"/>
-                <TextBox HorizontalAlignment="Left" Height="24" Margin="254,114,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Mot de passe" VerticalAlignment="Top" Width="81" Background="{x:Null}" BorderBrush="{x:Null}" />
+                <TextBox HorizontalAlignment="Left" Height="24" Margin="253,3,0,0" Grid.Row="4" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="44" Background="{x:Null}" BorderBrush="{x:Null}"/>
+                <TextBox HorizontalAlignment="Left" Height="24" Margin="254,17,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Mot de passe" VerticalAlignment="Top" Width="81" Background="{x:Null}" BorderBrush="{x:Null}" />
 
             </Grid>
         </Border>

@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace Projet_ABPP
 {
     /// <summary>
-    /// Logique d'interaction pour BatPrincipale.xaml
+    /// Logique d'interaction pour Laboratoire.xaml
     /// </summary>
-    public partial class BatPrincipale : Window
+    public partial class Laboratoire : Window
     {
-        public BatPrincipale()
+        public Laboratoire()
         {
             InitializeComponent();
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
