@@ -13,7 +13,7 @@
         </LinearGradientBrush>
     </Window.Background>
     <Border CornerRadius="52" BorderThickness="10" BorderBrush="Transparent" Height="NaN" Margin="0,0,89,103" Width="NaN">
-
+        
         <Border CornerRadius="35" BorderThickness="20" Margin="120,29,39,-3" Width="NaN">
             <Border.BorderBrush>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
@@ -76,7 +76,7 @@
                 </TextBox>
                 <TextBox HorizontalAlignment="Left" Height="24" Margin="253,44,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="44" Background="{x:Null}" BorderBrush="{x:Null}"/>
                 <TextBox HorizontalAlignment="Left" Height="24" Margin="254,114,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Mot de passe" VerticalAlignment="Top" Width="81" Background="{x:Null}" BorderBrush="{x:Null}" />
-
+            
             </Grid>
         </Border>
     </Border>
