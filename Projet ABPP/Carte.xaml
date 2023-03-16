@@ -15,6 +15,10 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid Margin="30,0,6,0">
+        <Button  Margin="829,225,284,338" Background="Transparent" BorderBrush="Transparent" RenderTransformOrigin="0.5,0.5" MouseDown="Bat1"/>
+        <Button  Margin="974,252,115,338" Background="Transparent" BorderBrush="Transparent" RenderTransformOrigin="0.5,0.5" MouseDown="Bat2"/>
+        <Button  Margin="826,378,268,194" Background="Transparent" BorderBrush="Transparent" RenderTransformOrigin="0.5,0.5" MouseDown="Bat3"/>
+        <Button  Margin="974,376,115,211" Background="Transparent" BorderBrush="Transparent" RenderTransformOrigin="0.5,0.5" MouseDown="Bat4"/>
         <Image Margin="482,95,-210,72" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -28,8 +32,9 @@
                 <BitmapImage DecodePixelWidth="300" UriSource="/image/map.png" />
             </Image.Source>
         </Image>
+        
         <TextBox HorizontalAlignment="Left" Height="82" Margin="36,80,0,0" TextWrapping="Wrap" Text="GSB est une entreprise de " VerticalAlignment="Top" Width="420" Background="{x:Null}" TextChanged="TextBox_TextChanged" FontSize="27" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}"/>
-        <TextBox HorizontalAlignment="Left" Height="356" Margin="34,236,0,0" TextWrapping="Wrap" Text="GSB se compose de 4 batiments&#xD;&#xA;&#xD;&#xA;- Le&#xD;&#xA; &#xD;&#xA;- Le&#xD;&#xA;&#xD;&#xA;- Le&#xD;&#xA;&#xD;&#xA;- Le" VerticalAlignment="Top" Width="420" Background="{x:Null}" TextChanged="TextBox_TextChanged" FontSize="27" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Height="356" Margin="10,243,0,0" TextWrapping="Wrap" Text="GSB se compose de 4 batiments&#xD;&#xA;&#xD;&#xA;- Le&#xD;&#xA; &#xD;&#xA;- Le&#xD;&#xA;&#xD;&#xA;- Le&#xD;&#xA;&#xD;&#xA;- Le" VerticalAlignment="Top" Width="420" Background="{x:Null}" TextChanged="TextBox_TextChanged" FontSize="27" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}"/>
 
     </Grid>
 </Window>

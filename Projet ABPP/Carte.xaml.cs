@@ -28,5 +28,31 @@ namespace Projet_ABPP
         {
 
         }
+
+        private void Bat1(object sender, MouseButtonEventArgs e)
+        {
+            BatPrincipale map = new BatPrincipale();
+            map.Show();
+        }
+
+        /*private void Bat2(object sender, MouseButtonEventArgs e)
+        {
+            Laboratoire map = new Laboratoire();
+            map.Show();
+        }
+
+        private void Bat3(object sender, MouseButtonEventArgs e)
+        {
+            Parking map = new Parking();
+            map.Show();
+        }
+
+        private void Bat4(object sender, MouseButtonEventArgs e)
+        {
+            Archives map = new Archives();
+            map.Show();
+        }*/
+
+
     }
 }
