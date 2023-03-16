@@ -25,7 +25,8 @@
             <Grid Margin="-4,-4,-9,0" Height="350" Width="NaN" VerticalAlignment="Top">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="44*"/>
-                    <RowDefinition Height="91*"/>
+                    <RowDefinition Height="45*"/>
+                    <RowDefinition Height="46*"/>
                     <RowDefinition Height="27*"/>
                     <RowDefinition Height="14*"/>
                     <RowDefinition Height="56*"/>
@@ -39,7 +40,7 @@
                     </LinearGradientBrush>
 
                 </Grid.Background>
-                <Image Margin="191,43,162,20" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="3">
+                <Image Margin="191,43,162,20" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="4">
                     <Image.Source>/Image/login.png</Image.Source>
                     <Image.RenderTransform>
                         <TransformGroup>
@@ -51,7 +52,7 @@
                     </Image.RenderTransform>
 
                 </Image>
-                <Image Margin="471,35,-5,38" RenderTransformOrigin="0.5,0.5" Grid.Row="5" MouseDown="Send">
+                <Image Margin="471,35,-5,38" RenderTransformOrigin="0.5,0.5" Grid.Row="6" MouseDown="Send">
                     <Image.Source>/Image/send.png</Image.Source>
                     <Image.RenderTransform>
                         <TransformGroup>
@@ -63,22 +64,22 @@
                     </Image.RenderTransform>
 
                 </Image>
-                <TextBox x:Name="Login" Margin="253,23,225,6" Grid.Row="4" TextAlignment="Center" BorderBrush="Black">
+                <TextBox x:Name="Login" Margin="253,23,225,6" Grid.Row="5" TextAlignment="Center" BorderBrush="Black">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="13"/>
                         </Style>
                     </TextBox.Resources>
                 </TextBox>
-                <TextBox  x:Name="Motdepasse" Margin="249,36,220,55" Grid.Row="5" BorderBrush="Black" TextAlignment="Center">
+                <TextBox  x:Name="Motdepasse" Margin="249,36,220,55" Grid.Row="6" BorderBrush="Black" TextAlignment="Center">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="13"/>
                         </Style>
                     </TextBox.Resources>
                 </TextBox>
-                <TextBox HorizontalAlignment="Left" Height="24" Margin="253,3,0,0" Grid.Row="4" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="44" Background="{x:Null}" BorderBrush="{x:Null}"/>
-                <TextBox HorizontalAlignment="Left" Height="24" Margin="254,17,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Mot de passe" VerticalAlignment="Top" Width="81" Background="{x:Null}" BorderBrush="{x:Null}" />
+                <TextBox HorizontalAlignment="Left" Height="24" Margin="253,3,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="44" Background="{x:Null}" BorderBrush="{x:Null}"/>
+                <TextBox HorizontalAlignment="Left" Height="24" Margin="254,17,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Mot de passe" VerticalAlignment="Top" Width="81" Background="{x:Null}" BorderBrush="{x:Null}" />
 
             </Grid>
         </Border>
