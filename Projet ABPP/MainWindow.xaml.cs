@@ -30,7 +30,7 @@ namespace Projet_ABPP
         }
 
 
-        private string connectionString = "Server=nom_du_serveur;Database=ABPP_Csharp;User Id=nom_d'utilisateur;Password=mot_de_passe;";
+        private string connectionString = "Server=localhost Database=ABPP_Csharp;User Id=sa;Password=Info76240#;";
         private void Send(object sender, RoutedEventArgs e)
         {
             // Récupérer les informations d'identification entrées par l'utilisateur
