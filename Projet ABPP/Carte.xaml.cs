@@ -24,9 +24,11 @@ namespace Projet_ABPP
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Back(object sender, MouseButtonEventArgs e)
         {
-
+            MainWindow connexion = new MainWindow();
+            connexion.Show();
+            this.Close();
         }
 
         private void Bat1(object sender, MouseButtonEventArgs e)

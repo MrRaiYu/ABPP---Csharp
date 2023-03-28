@@ -18,6 +18,7 @@
     <None Remove="Image\Bat3.png" />
     <None Remove="Image\Bat4.png" />
     <None Remove="Image\Labo.png" />
+    <None Remove="Image\back.png" />
     <None Remove="Image\login.png" />
     <None Remove="Image\map.png" />
     <None Remove="Image\send.png" />
