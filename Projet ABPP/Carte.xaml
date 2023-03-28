@@ -9,13 +9,17 @@
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#FF5EC584" Offset="0.003"/>
-            <GradientStop Color="#FF28ED58" Offset="0.993"/>
-            <GradientStop Color="#FF4AC76A" Offset="0.797"/>
-            <GradientStop Color="#FF22A24F" Offset="0.05"/>
+            <GradientStop Color="#FF78F1AC" Offset="0.987"/>
+            <GradientStop Color="#FF82C18C" Offset="0.803"/>
+            <GradientStop Color="#FF4CCC6C" Offset="0.05"/>
         </LinearGradientBrush>
     </Window.Background>
-    <Grid Margin="30,0,6,0">
-        <Image Margin="482,95,-210,72" RenderTransformOrigin="0.5,0.5">
+    <Grid Margin="11,0,6,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image Margin="695,133,-43,76" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -28,6 +32,11 @@
                 <BitmapImage DecodePixelWidth="300" UriSource="/image/map.png" />
             </Image.Source>
         </Image>
+        <TextBox HorizontalAlignment="Left" Height="82" Margin="21,66,0,0" TextWrapping="Wrap"  IsReadOnly="True" Text="GSB est une entreprise de " VerticalAlignment="Top" Width="420" Background="{x:Null}" FontSize="24" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}" Grid.RowSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="356" Margin="27,265,0,0" TextWrapping="Wrap"  IsReadOnly="True" Text="GSB se compose de 4 batiments&#xA;&#xA;- Le batiment principale&#xA; &#xA;- Le batiment des archives&#xA;&#xA;- Le parking&#xA;&#xA;- Le Laboratoire" VerticalAlignment="Top" Width="420" Background="{x:Null}" FontSize="24" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}" IsTabStop="False" Grid.RowSpan="2"/>
+        <Label x:Name="WelcomeLabel" Margin="791,24,50,564" Grid.RowSpan="2" Foreground="White" FontSize="16">
+
+        </Label>
         <Image Margin="826,214,0,331" RenderTransformOrigin="0.5,0.5"  MouseDown="Bat1" HorizontalAlignment="Left" Width="106">
             <Image.Source>/Image/Bat1.png</Image.Source>
         </Image>

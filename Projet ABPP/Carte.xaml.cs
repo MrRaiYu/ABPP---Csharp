@@ -19,11 +19,14 @@ namespace Projet_ABPP
     /// </summary>
     public partial class Carte : Window
     {
-        public Carte()
+        private string username;
+
+        public Carte(string username)
         {
             InitializeComponent();
-        }
-
+            this.username = username;
+            WelcomeLabel.Content = "Bonjour " + username + ", choisis un batiment sur la carte";
+            //MessageBox.Show("Bienvenue " + username + " !");
         private void Back(object sender, MouseButtonEventArgs e)
         {
             MainWindow connexion = new MainWindow();

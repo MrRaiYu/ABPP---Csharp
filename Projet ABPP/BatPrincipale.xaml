@@ -8,10 +8,10 @@
     Title="BatPrincipale" Height="450" Width="800">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-            <GradientStop Color="#FF5EC584" Offset="0.003"/>
-            <GradientStop Color="#FF28ED58" Offset="0.993"/>
-            <GradientStop Color="#FF4AC76A" Offset="0.797"/>
-            <GradientStop Color="#FF22A24F" Offset="0.05"/>
+            <GradientStop Color="#FF4BC176" Offset="0.003"/>
+            <GradientStop Color="#FF82D296" Offset="0.993"/>
+            <GradientStop Color="#FF53CC72" Offset="0.797"/>
+            <GradientStop Color="#FF25B959" Offset="0.05"/>
         </LinearGradientBrush>
     </Window.Background>
     <Grid Margin="8,0,6,0">
@@ -20,7 +20,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Image Margin="475,-6,-8,15" Grid.Column="0" Source="/image/principale.png" Grid.ColumnSpan="2">
+        <Image Margin="475,-6,-8,3" Grid.Column="0" Source="/image/principale.png" Grid.ColumnSpan="2">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -32,7 +32,7 @@
         </Image>
 
         <StackPanel Grid.Column="1" Margin="0,16,342,19">
-            <TextBox Text="&#xA;&#xA;Le bâtiment principal est le bâtiment central du laboratoire. Il comprend les bureaux des employés, les salles de réunion, la cafétéria etc… &#xA;&#xA;Il est accessible à tous les visiteurs, ainsi qu'aux employés ayant les niveaux d'habilitation de visiteur, gestionnaire et laboratoire.&#xA;&#xA;‌" FontSize="18" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}" Background="{x:Null}" TextWrapping="Wrap" TextChanged="TextBox_TextChanged_1" Height="414" Width="450"/>
+            <TextBox IsReadOnly="True" Text="&#xA;&#xA;Le bâtiment principal est le bâtiment central du laboratoire. Il comprend les bureaux des employés, les salles de réunion, la cafétéria etc… &#xA;&#xA;Il est accessible à tous les visiteurs, ainsi qu'aux employés ayant les niveaux d'habilitation de visiteur, gestionnaire et laboratoire.&#xA;&#xA;‌" FontSize="18" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}" Background="{x:Null}" TextWrapping="Wrap" TextChanged="TextBox_TextChanged_1" Height="414" Width="450"/>
             <TextBox FontSize="18" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}" Background="{x:Null}" TextWrapping="Wrap" Height="366"/>
         </StackPanel>
     </Grid>
