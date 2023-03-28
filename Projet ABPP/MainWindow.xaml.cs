@@ -21,10 +21,11 @@ namespace Projet_ABPP
             InitializeComponent();
         }
 
-        private void Send(object sender, MouseButtonEventArgs e)
+        private void Send(object sender, RoutedEventArgs e)
         {
             Carte map = new Carte();
             map.Show();
+            this.Close();
         }
     }
 }
