@@ -30,7 +30,7 @@ namespace Projet_ABPP
         }
 
 
-        private string connectionString = "Server=localhost Database=ABPP_Csharp;User Id=sa;Password=Info76240#;";
+        private string connectionString = "Server=localhost;Database=ABPP_Csharp;User Id=sa;Password=Info76240#;";
         private void Send(object sender, RoutedEventArgs e)
         {
             // Récupérer les informations d'identification entrées par l'utilisateur
@@ -49,14 +49,17 @@ namespace Projet_ABPP
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 // Construire la requête SQL
-                string query = "SELECT COUNT(*) FROM Users WHERE Username=@Username AND Password=@Password";
-                SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Username", username);
-                command.Parameters.AddWithValue("@Password", password);
+                string PS = "ABPP_LoginConnexion";
+                SqlCommand command = new SqlCommand(PS, connection);
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@Identifiant", username);
+                command.Parameters.AddWithValue("@Motdepasse", password);
 
                 // Ouvrir la connexion et exécuter la requête
                 connection.Open();
                 int count = (int)command.ExecuteScalar();
+                connection.Close();
+                
 
                 // Vérifier le résultat de la requête
                 if (count == 1)
