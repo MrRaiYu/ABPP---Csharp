@@ -10,23 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Projet_ABPP
+namespace Projet_ABPP_bis
 {
     /// <summary>
-    /// Logique d'interaction pour Carte.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class Carte : Window
+    public partial class MainWindow : Window
     {
-        private string username;
-
-        public Carte(string username)
+        public MainWindow()
         {
             InitializeComponent();
-            this.username = username;
-            WelcomeLabel.Content = "Bonjour " + username + ", choisis un batiment sur la carte";
-            //MessageBox.Show("Bienvenue " + username + " !");
         }
     }
 }

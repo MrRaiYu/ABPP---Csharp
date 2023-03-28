@@ -29,13 +29,12 @@ namespace Projet_ABPP
             InitializeComponent();
         }
 
-
-        private string connectionString = "Server=nom_du_serveur;Database=ABPP_Csharp;User Id=nom_d'utilisateur;Password=mot_de_passe;";
+        private string connectionString = "Server=localhost;Database=ABPP_Csharp;Integrated Security=SSPI;";
         private void Send(object sender, RoutedEventArgs e)
         {
             // Récupérer les informations d'identification entrées par l'utilisateur
             string username = Login.Text;
-            string password = Motdepasse.Text;
+            string password = Motdepasse.Password;
 
 
             // Vérifier si les champs d'identification sont vides
@@ -49,20 +48,21 @@ namespace Projet_ABPP
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 // Construire la requête SQL
-                string query = "SELECT COUNT(*) FROM Users WHERE Username=@Username AND Password=@Password";
-                SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Username", username);
-                command.Parameters.AddWithValue("@Password", password);
+                string PS = "ABPP_LoginConnexion";
+                SqlCommand command = new SqlCommand(PS, connection);
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@Identifiant", username);
+                command.Parameters.AddWithValue("@Motdepasse", password);
 
                 // Ouvrir la connexion et exécuter la requête
                 connection.Open();
                 int count = (int)command.ExecuteScalar();
 
                 // Vérifier le résultat de la requête
-                if (count == 1)
+                if (count > 0)
                 {
                     // Si les informations d'identification sont valides, naviguer vers la page suivante
-                    Carte map = new Carte();
+                    Carte map = new Carte(username);
                     map.Show();
                     this.Close();
                 }
@@ -74,5 +74,9 @@ namespace Projet_ABPP
             }
         }
 
+        private void Motdepasse0_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }  
+        }
     }
-}

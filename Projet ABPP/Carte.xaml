@@ -5,17 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projet_ABPP"
         mc:Ignorable="d"
-        Title="Carte" Height="692" Width="1232">
+        Title="Carte" Height="692" Width="1232" ResizeMode="NoResize">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#FF5EC584" Offset="0.003"/>
-            <GradientStop Color="#FF28ED58" Offset="0.993"/>
-            <GradientStop Color="#FF4AC76A" Offset="0.797"/>
-            <GradientStop Color="#FF22A24F" Offset="0.05"/>
+            <GradientStop Color="#FF78F1AC" Offset="0.987"/>
+            <GradientStop Color="#FF82C18C" Offset="0.803"/>
+            <GradientStop Color="#FF4CCC6C" Offset="0.05"/>
         </LinearGradientBrush>
     </Window.Background>
-    <Grid Margin="30,0,6,0">
-        <Image Margin="694,100,-42,109" RenderTransformOrigin="0.5,0.5">
+    <Grid Margin="11,0,6,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image Margin="695,133,-43,76" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -28,8 +32,11 @@
                 <BitmapImage DecodePixelWidth="300" UriSource="/image/map.png" />
             </Image.Source>
         </Image>
-        <TextBox HorizontalAlignment="Left" Height="82" Margin="21,82,0,0" TextWrapping="Wrap" Text="GSB est une entreprise de " VerticalAlignment="Top" Width="420" Background="{x:Null}" TextChanged="TextBox_TextChanged" FontSize="27" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}"/>
-        <TextBox HorizontalAlignment="Left" Height="356" Margin="22,228,0,0" TextWrapping="Wrap" Text="GSB se compose de 4 batiments&#xD;&#xA;&#xD;&#xA;- Le&#xD;&#xA; &#xD;&#xA;- Le&#xD;&#xA;&#xD;&#xA;- Le&#xD;&#xA;&#xD;&#xA;- Le" VerticalAlignment="Top" Width="420" Background="{x:Null}" TextChanged="TextBox_TextChanged" FontSize="27" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Height="82" Margin="21,66,0,0" TextWrapping="Wrap"  IsReadOnly="True" Text="GSB est une entreprise de " VerticalAlignment="Top" Width="420" Background="{x:Null}" FontSize="24" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}" Grid.RowSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="356" Margin="27,265,0,0" TextWrapping="Wrap"  IsReadOnly="True" Text="GSB se compose de 4 batiments&#xA;&#xA;- Le batiment principale&#xA; &#xA;- Le batiment des archives&#xA;&#xA;- Le parking&#xA;&#xA;- Le Laboratoire" VerticalAlignment="Top" Width="420" Background="{x:Null}" FontSize="24" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}" IsTabStop="False" Grid.RowSpan="2"/>
+        <Label x:Name="WelcomeLabel" Margin="791,24,50,564" Grid.RowSpan="2" Foreground="White" FontSize="16">
+
+        </Label>
 
     </Grid>
 </Window>
