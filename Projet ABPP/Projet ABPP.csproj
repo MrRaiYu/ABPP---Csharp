@@ -13,7 +13,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Image\Bat1.png" />
+    <None Remove="Image\Bat2.png" />
+    <None Remove="Image\Bat3.png" />
+    <None Remove="Image\Bat4.png" />
     <None Remove="Image\Labo.png" />
+    <None Remove="Image\back.png" />
     <None Remove="Image\login.png" />
     <None Remove="Image\map.png" />
     <None Remove="Image\send.png" />
@@ -21,6 +26,18 @@
 
   <ItemGroup>
     <Content Include="AssemblyInfo.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Bat1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Bat2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Bat3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Bat4.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Image\Labo.png">
