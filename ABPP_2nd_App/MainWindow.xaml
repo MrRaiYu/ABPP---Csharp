@@ -1,0 +1,42 @@
+﻿<Window x:Class="Projet_ABPP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_ABPP"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="515" Width="1000" MaxHeight="550" MaxWidth="1000" MinHeight="550" MinWidth="550" Margin="-14,0,0,0" ResizeMode="NoResize">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFC5B7F7" Offset="0.013"/>
+            <GradientStop Color="#FF5F3ED8" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Border CornerRadius="52" BorderThickness="10" BorderBrush="Transparent" Height="NaN" Margin="0,0,89,103" Width="NaN">
+
+        <Border CornerRadius="35" BorderThickness="20" Margin="120,29,39,-3" Width="NaN">
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="LightGreen" Offset="0.0"/>
+                    <GradientStop Color="#73C269" Offset="0.5"/>
+                    <GradientStop Color="#1E91A5" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Grid Margin="-2,-4,-3,0" Height="350" Width="NaN" VerticalAlignment="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="44*"/>
+                    <RowDefinition Height="91*"/>
+                    <RowDefinition Height="215*"/>
+                </Grid.RowDefinitions>
+                <Grid.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="LightGreen" Offset="0.0"/>
+                        <GradientStop Color="#73C269" Offset="0.5"/>
+                        <GradientStop Color="#1E91A5" Offset="1.0"/>
+                    </LinearGradientBrush>
+ 
+                </Grid.Background>
+            </Grid>
+        </Border>
+    </Border>
+</Window>

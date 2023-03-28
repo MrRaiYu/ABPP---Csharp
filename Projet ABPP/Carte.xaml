@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projet_ABPP"
         mc:Ignorable="d"
-        Title="Carte" Height="692" Width="1232">
+        Title="Carte" Height="692" Width="1232" ResizeMode="NoResize">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#FF5EC584" Offset="0.003"/>
@@ -15,7 +15,7 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid Margin="30,0,6,0">
-        <Image Margin="694,100,-42,109" RenderTransformOrigin="0.5,0.5">
+        <Image Margin="482,95,-210,72" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -28,8 +28,22 @@
                 <BitmapImage DecodePixelWidth="300" UriSource="/image/map.png" />
             </Image.Source>
         </Image>
-        <TextBox HorizontalAlignment="Left" Height="82" Margin="21,82,0,0" TextWrapping="Wrap" Text="GSB est une entreprise de " VerticalAlignment="Top" Width="420" Background="{x:Null}" TextChanged="TextBox_TextChanged" FontSize="27" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}"/>
-        <TextBox HorizontalAlignment="Left" Height="356" Margin="22,228,0,0" TextWrapping="Wrap" Text="GSB se compose de 4 batiments&#xD;&#xA;&#xD;&#xA;- Le&#xD;&#xA; &#xD;&#xA;- Le&#xD;&#xA;&#xD;&#xA;- Le&#xD;&#xA;&#xD;&#xA;- Le" VerticalAlignment="Top" Width="420" Background="{x:Null}" TextChanged="TextBox_TextChanged" FontSize="27" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}"/>
+        <Image Margin="826,214,0,331" RenderTransformOrigin="0.5,0.5"  MouseDown="Bat1" HorizontalAlignment="Left" Width="106">
+            <Image.Source>/Image/Bat1.png</Image.Source>
+        </Image>
+        <Image Margin="974,253,0,336" RenderTransformOrigin="0.5,0.5"  MouseDown="Bat1" HorizontalAlignment="Left" Width="108">
+            <Image.Source>/Image/Bat2.png</Image.Source>
+        </Image>
+        <Image Margin="826,389,0,189" RenderTransformOrigin="0.5,0.5"  MouseDown="Bat1" HorizontalAlignment="Left" Width="102">
+            <Image.Source>/Image/Bat3.png</Image.Source>
+        </Image>
+        <Image Margin="974,378,0,209" RenderTransformOrigin="0.5,0.5"  MouseDown="Bat1" HorizontalAlignment="Left" Width="108">
+            <Image.Source>/Image/Bat4.png</Image.Source>
+        </Image>
+
+
+        <TextBox HorizontalAlignment="Left" Height="82" Margin="36,80,0,0" TextWrapping="Wrap" Text="GSB est une entreprise de " VerticalAlignment="Top" Width="420" Background="{x:Null}" TextChanged="TextBox_TextChanged" FontSize="27" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Height="356" Margin="10,243,0,0" TextWrapping="Wrap" Text="GSB se compose de 4 batiments&#xD;&#xA;&#xD;&#xA;- Le&#xD;&#xA; &#xD;&#xA;- Le&#xD;&#xA;&#xD;&#xA;- Le&#xD;&#xA;&#xD;&#xA;- Le" VerticalAlignment="Top" Width="420" Background="{x:Null}" TextChanged="TextBox_TextChanged" FontSize="27" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}"/>
 
     </Grid>
 </Window>
