@@ -31,14 +31,14 @@
             </Image.RenderTransform>
         </Image>
 
-        <StackPanel Grid.Column="1" Margin="0,65,393,299" RenderTransformOrigin="0.5,0.5">
+        <StackPanel Margin="0,65,393,299" RenderTransformOrigin="0.5,0.5">
             <TextBlock x:Name="Emp" Text="{Binding Emp}" FontSize="20" Foreground="White" FontStretch="ExtraCondensed" Background="{x:Null}" TextWrapping="Wrap" Width="391" Height="48" FontFamily="Bahnschrift Condensed"/>
         </StackPanel>
-        <StackPanel Grid.Column="1" Margin="0,217,371,10" RenderTransformOrigin="0.5,0.5">
+        <StackPanel Margin="0,217,371,10" RenderTransformOrigin="0.5,0.5">
             <TextBlock x:Name="desc" Text="{Binding desc}" FontSize="20" Foreground="White" FontStretch="ExtraCondensed" Background="{x:Null}" TextWrapping="Wrap" Width="391" Height="204" FontFamily="Bahnschrift Condensed"/>
         </StackPanel>
         <Button Content="Modifier" HorizontalAlignment="Left" Margin="650,14,0,0" VerticalAlignment="Top" Height="38" Width="92" Click="modifier"/>
-        <Image Margin="0,15,797,373" Source="/Image/back.png" Stretch="Fill" MouseDown="Back"/>
+        <Image Margin="0,15,748,373" Source="/Image/back.png" Stretch="Fill" MouseDown="Back"/>
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="62" Margin="404,16,0,0" TextWrapping="Wrap" Text="Parking" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold"/>
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="43,16,0,0" TextWrapping="Wrap" Text="Emplacement" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold"/>
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="43,168,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold"/>

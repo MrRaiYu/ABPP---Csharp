@@ -29,7 +29,7 @@ namespace Projet_ABPP
             InitializeComponent();
         }
 
-        private string connectionString = "Server=localhost,1434;Database=ABPP_Csharp;User ID=sa; Password=Info76240#";
+        private string connectionString = "Server=localhost;Database=ABPP_Csharp;User ID=sa; Password=Info76240#";
         private void Send(object sender, RoutedEventArgs e)
         {
             // Récupérer les informations d'identification entrées par l'utilisateur
@@ -43,6 +43,20 @@ namespace Projet_ABPP
                 MessageBox.Show("Veuillez entrer votre nom d'utilisateur et votre mot de passe.");
                 return;
             }
+
+            //Hashage du mot de passe en MD5
+            static string CreateMD5(string input)
+            {
+                using (System.Security.Cryptography.MD5 md5 = System.Security.Cryptography.MD5.Create())
+                {
+                    byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
+                    byte[] hashBytes = md5.ComputeHash(inputBytes);
+
+                    return Convert.ToHexString(hashBytes);
+                }
+            }
+
+            password = CreateMD5(password);
 
             // Vérifier si les informations d'identification sont valides en interrogeant la base de données
             using (SqlConnection connection = new SqlConnection(connectionString))

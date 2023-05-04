@@ -24,7 +24,7 @@ namespace Projet_ABPP
         {
             InitializeComponent();
         }
-        private string connectionString = "Server=localhost,1434;Database=ABPP_Csharp;User ID=sa; Password=Info76240#";
+        private string connectionString = "Server=localhost;Database=ABPP_Csharp;User ID=sa; Password=Info76240#";
         private void Send(object sender, MouseButtonEventArgs e)
         {
 
