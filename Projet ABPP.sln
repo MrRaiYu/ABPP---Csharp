@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projet ABPP", "Projet ABPP\Projet ABPP.csproj", "{54C59AEF-D6F3-42FE-B1DF-E3FE460B06D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABPP_2nd_App", "ABPP_2nd_App\ABPP_2nd_App.csproj", "{3EB66B61-A855-4D2C-BCCB-4422AF41CE8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projet ABPP bis", "Projet ABPP bis\Projet ABPP bis.csproj", "{3EB66B61-A855-4D2C-BCCB-4422AF41CE8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
