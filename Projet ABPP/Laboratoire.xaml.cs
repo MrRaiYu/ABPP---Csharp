@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,11 +23,61 @@ namespace Projet_ABPP
         public Laboratoire()
         {
             InitializeComponent();
+
+        string connectionString = "Server=localhost,1434;Database=ABPP_Csharp;User ID=sa; Password=Info76240#";
+
+        // Récupérer du nom du batiment
+        string nomBat = "Laboratoire";
+
+            // Vérifier si les informations d'identification sont valides en interrogeant la base de données
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                // Construire la requête SQL pour la description
+                string PSdesc = "ABPP_ReadDescBatiment";
+                SqlCommand command = new SqlCommand(PSdesc, connection);
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@NomBat", nomBat);
+
+                // Ouvrir la connexion et exécuter la requête
+                connection.Open();
+                string descBat = (string)command.ExecuteScalar();
+                connection.Close();
+
+                desc.Text = descBat;
+            }
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                // Construire la requête SQL pour la description
+                string PSemp = "ABPP_ReadEmpBatiment";
+                SqlCommand command = new SqlCommand(PSemp, connection);
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@NomBat", nomBat);
+
+                // Ouvrir la connexion et exécuter la requête
+                connection.Open();
+                string EmpBat = (string)command.ExecuteScalar();
+                connection.Close();
+
+                Emp.Text = EmpBat;
+            }
         }
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
 
         }
+        private void modifier(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            FormsModifLaboratoire map = new FormsModifLaboratoire();
+            map.Show();
+
+        }
+        private void Back(object sender, MouseButtonEventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

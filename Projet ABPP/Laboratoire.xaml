@@ -15,12 +15,16 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid Margin="8,0,6,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="198*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Image Margin="434,2,-1,1" Grid.Column="0" Source="/image/labo.png" Grid.ColumnSpan="2">
+        <Image Margin="351,7,114,19" Grid.Column="0" Source="/image/labo.png" Grid.Row="1">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -31,9 +35,16 @@
             </Image.RenderTransform>
         </Image>
 
-        <StackPanel Grid.Column="1" Margin="0,16,371,19">
-            <TextBox Text=" &#xA;&#xA;Le bâtiment des laboratoires est l'endroit où se déroulent les activités de recherche et de développement du laboratoire.&#xA;&#xA; Il est accessible uniquement aux employés ayant le niveau d'habilitation de laboratoire." FontSize="20" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}" Background="{x:Null}" TextWrapping="Wrap" TextChanged="TextBox_TextChanged_1" Width="418" Height="404" HorizontalAlignment="Left" FontFamily="Bahnschrift Condensed"/>
+        <StackPanel Grid.Column="1" Margin="46,27,-46,299" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <TextBlock x:Name="Emp" Text="{Binding Emp}" FontSize="20" Foreground="White" FontStretch="ExtraCondensed" Background="{x:Null}" TextWrapping="Wrap" Width="391" Height="48" FontFamily="Bahnschrift Condensed"/>
         </StackPanel>
-        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="62" Margin="514,16,0,0" TextWrapping="Wrap" Text="Laboratoire" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold" BorderBrush="{x:Null}"/>
+        <StackPanel Grid.Column="1" Margin="46,179,-46,10" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <TextBlock x:Name="desc" Text="{Binding desc}" FontSize="20" Foreground="White" FontStretch="ExtraCondensed" Background="{x:Null}" TextWrapping="Wrap" Width="391" Height="204" FontFamily="Bahnschrift Condensed"/>
+        </StackPanel>
+        <Button Content="Modifier" HorizontalAlignment="Left" Margin="666,14,0,0" VerticalAlignment="Top" Height="38" Width="92" Click="modifier" Grid.RowSpan="2"/>
+        <Image Margin="0,15,792,373" Source="/Image/back.png" Stretch="Fill" MouseDown="Back" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="62" Margin="404,16,0,0" TextWrapping="Wrap" Text="Laboratoire" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="38" Margin="43,16,0,0" TextWrapping="Wrap" Text="Emplacement" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="38" Margin="43,130,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold" Grid.Row="1"/>
     </Grid>
 </Window>

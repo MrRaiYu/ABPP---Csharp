@@ -13,19 +13,29 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Image\Archives .png" />
+    <None Remove="Image\archives.png" />
+    <None Remove="Image\back.png" />
     <None Remove="Image\Bat1.png" />
     <None Remove="Image\Bat2.png" />
     <None Remove="Image\Bat3.png" />
     <None Remove="Image\Bat4.png" />
     <None Remove="Image\Labo.png" />
-    <None Remove="Image\back.png" />
     <None Remove="Image\login.png" />
     <None Remove="Image\map.png" />
+    <None Remove="Image\parking.png" />
+    <None Remove="Image\principale.png" />
     <None Remove="Image\send.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="AssemblyInfo.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Archives .png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\back.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Image\Bat1.png">
@@ -47,6 +57,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Image\map.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\parking.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\principale.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Image\send.png">

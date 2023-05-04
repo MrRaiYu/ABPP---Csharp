@@ -5,6 +5,18 @@
     <Compile Update="Archives.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="FormsModifArchives.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FormsModifBatPrincipale.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FormsModifLaboratoire.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FormsModifParking.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Laboratoire.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -14,6 +26,18 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Archives.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FormsModifArchives.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FormsModifBatPrincipale.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FormsModifLaboratoire.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FormsModifParking.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Laboratoire.xaml">

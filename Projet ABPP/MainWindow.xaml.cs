@@ -29,7 +29,7 @@ namespace Projet_ABPP
             InitializeComponent();
         }
 
-        private string connectionString = "Server=localhost;Database=ABPP_Csharp;Integrated Security=SSPI;";
+        private string connectionString = "Server=localhost,1434;Database=ABPP_Csharp;User ID=sa; Password=Info76240#";
         private void Send(object sender, RoutedEventArgs e)
         {
             // Récupérer les informations d'identification entrées par l'utilisateur
@@ -57,6 +57,7 @@ namespace Projet_ABPP
                 // Ouvrir la connexion et exécuter la requête
                 connection.Open();
                 int count = (int)command.ExecuteScalar();
+                connection.Close();
 
                 // Vérifier le résultat de la requête
                 if (count > 0)

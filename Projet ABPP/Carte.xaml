@@ -32,30 +32,26 @@
                 <BitmapImage DecodePixelWidth="300" UriSource="/image/map.png" />
             </Image.Source>
         </Image>
-        <TextBox HorizontalAlignment="Left" Height="82" Margin="21,66,0,0" TextWrapping="Wrap"  IsReadOnly="True" Text="GSB est une entreprise de " VerticalAlignment="Top" Width="420" Background="{x:Null}" FontSize="24" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}" Grid.RowSpan="2"/>
         <TextBox HorizontalAlignment="Left" Height="356" Margin="27,265,0,0" TextWrapping="Wrap"  IsReadOnly="True" Text="GSB se compose de 4 batiments&#xA;&#xA;- Le batiment principale&#xA; &#xA;- Le batiment des archives&#xA;&#xA;- Le parking&#xA;&#xA;- Le Laboratoire" VerticalAlignment="Top" Width="420" Background="{x:Null}" FontSize="24" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}" IsTabStop="False" Grid.RowSpan="2"/>
         <Label x:Name="WelcomeLabel" Margin="791,24,50,564" Grid.RowSpan="2" Foreground="White" FontSize="16">
 
         </Label>
-        <Image Margin="826,214,0,331" RenderTransformOrigin="0.5,0.5"  MouseDown="Bat1" HorizontalAlignment="Left" Width="106">
+        <Image Margin="843,246,0,316" RenderTransformOrigin="0.5,0.5"  MouseDown="Bat1" HorizontalAlignment="Left" Width="129" Grid.RowSpan="2">
             <Image.Source>/Image/Bat1.png</Image.Source>
         </Image>
-        <Image Margin="974,253,0,336" RenderTransformOrigin="0.5,0.5"  MouseDown="Bat1" HorizontalAlignment="Left" Width="108">
+        <Image Margin="1001,262,0,316" RenderTransformOrigin="0.5,0.5"  MouseDown="Bat2" HorizontalAlignment="Left" Width="126" Grid.RowSpan="2">
             <Image.Source>/Image/Bat2.png</Image.Source>
         </Image>
-        <Image Margin="826,389,0,189" RenderTransformOrigin="0.5,0.5"  MouseDown="Bat1" HorizontalAlignment="Left" Width="102">
+        <Image Margin="843,389,0,159" RenderTransformOrigin="0.5,0.5"  MouseDown="Bat3" HorizontalAlignment="Left" Width="129" Grid.RowSpan="2">
             <Image.Source>/Image/Bat3.png</Image.Source>
         </Image>
-        <Image Margin="974,378,0,209" RenderTransformOrigin="0.5,0.5"  MouseDown="Bat1" HorizontalAlignment="Left" Width="108">
+        <Image Margin="1001,396,0,178" RenderTransformOrigin="0.5,0.5"  MouseDown="Bat4" HorizontalAlignment="Left" Width="126" Grid.RowSpan="2">
             <Image.Source>/Image/Bat4.png</Image.Source>
         </Image>
 
-
-        <TextBox HorizontalAlignment="Left" Height="82" Margin="36,80,0,0" TextWrapping="Wrap" Text="GSB est une entreprise de " VerticalAlignment="Top" Width="420" Background="{x:Null}" TextChanged="TextBox_TextChanged" FontSize="27" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}"/>
-        <TextBox HorizontalAlignment="Left" Height="356" Margin="10,243,0,0" TextWrapping="Wrap" Text="GSB se compose de 4 batiments&#xD;&#xA;&#xD;&#xA;- Le&#xD;&#xA; &#xD;&#xA;- Le&#xD;&#xA;&#xD;&#xA;- Le&#xD;&#xA;&#xD;&#xA;- Le" VerticalAlignment="Top" Width="420" Background="{x:Null}" TextChanged="TextBox_TextChanged" FontSize="27" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}"/>
-        <TextBox HorizontalAlignment="Left" Height="82" Margin="36,80,0,0" TextWrapping="Wrap" Text="GSB est une entreprise de " VerticalAlignment="Top" Width="420" Background="{x:Null}" FontSize="27" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}"/>
-        <TextBox HorizontalAlignment="Left" Height="356" Margin="34,236,0,0" TextWrapping="Wrap" Text="GSB se compose de 4 batiments&#xD;&#xA;&#xD;&#xA;- Le&#xD;&#xA; &#xD;&#xA;- Le&#xD;&#xA;&#xD;&#xA;- Le&#xD;&#xA;&#xD;&#xA;- Le" VerticalAlignment="Top" Width="420" Background="{x:Null}" FontSize="27" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}"/>
-        <Image Margin="-18,10,1117,570" Source="/Image/back.png" Stretch="Fill" MouseDown="Back"/>
+        <TextBox HorizontalAlignment="Left" Height="82" Margin="21,107,0,0" TextWrapping="Wrap" Text="GSB est une entreprise de " VerticalAlignment="Top" Width="420" Background="{x:Null}"  FontSize="27" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}" Grid.RowSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="356" Margin="10,243,0,0" TextWrapping="Wrap" Text="GSB se compose de 4 batiments&#xD;&#xA;&#xD;&#xA;- Le&#xD;&#xA; &#xD;&#xA;- Le&#xD;&#xA;&#xD;&#xA;- Le&#xD;&#xA;&#xD;&#xA;- Le" VerticalAlignment="Top" Width="420" Background="{x:Null}" FontSize="27" Foreground="White" FontStretch="ExtraCondensed" BorderBrush="{x:Null}"/>
+        <Image Margin="0,-4,1099,569" Source="/Image/back.png" Stretch="Fill" MouseDown="Back" Grid.RowSpan="2"/>
 
     </Grid>
 </Window>

@@ -27,6 +27,7 @@ namespace Projet_ABPP
             this.username = username;
             WelcomeLabel.Content = "Bonjour " + username + ", choisis un batiment sur la carte";
             //MessageBox.Show("Bienvenue " + username + " !");
+        }
         private void Back(object sender, MouseButtonEventArgs e)
         {
             MainWindow connexion = new MainWindow();
@@ -40,7 +41,7 @@ namespace Projet_ABPP
             map.Show();
         }
 
-        /*private void Bat2(object sender, MouseButtonEventArgs e)
+        private void Bat2(object sender, MouseButtonEventArgs e)
         {
             Laboratoire map = new Laboratoire();
             map.Show();
@@ -56,8 +57,6 @@ namespace Projet_ABPP
         {
             Archives map = new Archives();
             map.Show();
-        }*/
-
-
+        }
     }
 }
