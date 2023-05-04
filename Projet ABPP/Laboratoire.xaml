@@ -20,11 +20,11 @@
             <RowDefinition Height="198*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
 
-        <Image Margin="351,7,114,19" Grid.Column="0" Source="/image/labo.png" Grid.Row="1">
+        <Image Margin="408,7,57,19" Grid.Column="0" Source="/image/labo.png" Grid.Row="1">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -35,14 +35,14 @@
             </Image.RenderTransform>
         </Image>
 
-        <StackPanel Grid.Column="1" Margin="46,27,-46,299" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+        <StackPanel Margin="10,27,393,313" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
             <TextBlock x:Name="Emp" Text="{Binding Emp}" FontSize="20" Foreground="White" FontStretch="ExtraCondensed" Background="{x:Null}" TextWrapping="Wrap" Width="391" Height="48" FontFamily="Bahnschrift Condensed"/>
         </StackPanel>
-        <StackPanel Grid.Column="1" Margin="46,179,-46,10" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+        <StackPanel Margin="10,192,383,35" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
             <TextBlock x:Name="desc" Text="{Binding desc}" FontSize="20" Foreground="White" FontStretch="ExtraCondensed" Background="{x:Null}" TextWrapping="Wrap" Width="391" Height="204" FontFamily="Bahnschrift Condensed"/>
         </StackPanel>
         <Button Content="Modifier" HorizontalAlignment="Left" Margin="666,14,0,0" VerticalAlignment="Top" Height="38" Width="92" Click="modifier" Grid.RowSpan="2"/>
-        <Image Margin="0,15,792,373" Source="/Image/back.png" Stretch="Fill" MouseDown="Back" Grid.RowSpan="2"/>
+        <Image Margin="0,15,748,373" Source="/Image/back.png" Stretch="Fill" MouseDown="Back" Grid.RowSpan="2"/>
         <TextBlock HorizontalAlignment="Left" Height="62" Margin="404,16,0,0" TextWrapping="Wrap" Text="Laboratoire" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold" Grid.RowSpan="2"/>
         <TextBlock HorizontalAlignment="Left" Height="38" Margin="43,16,0,0" TextWrapping="Wrap" Text="Emplacement" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold" Grid.RowSpan="2"/>
         <TextBlock HorizontalAlignment="Left" Height="38" Margin="43,130,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold" Grid.Row="1"/>
