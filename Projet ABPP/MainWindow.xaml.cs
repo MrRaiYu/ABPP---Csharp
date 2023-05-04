@@ -29,7 +29,9 @@ namespace Projet_ABPP
             InitializeComponent();
         }
 
-        private string connectionString = "Server=localhost;Database=ABPP_Csharp;User ID=sa; Password=Info76240#";
+        string connectionString = config.VariablesGlobales.connectionString;
+
+        //private string connectionString = "Server=localhost;Database=ABPP_Csharp;User ID=sa; Password=Info76240#";
         private void Send(object sender, RoutedEventArgs e)
         {
             // Récupérer les informations d'identification entrées par l'utilisateur

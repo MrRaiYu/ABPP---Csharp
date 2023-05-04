@@ -24,10 +24,10 @@ namespace Projet_ABPP
         {
             InitializeComponent();
 
-        string connectionString = "Server=localhost;Database=ABPP_Csharp;User ID=sa; Password=Info76240#";
+        string connectionString = config.VariablesGlobales.connectionString;
 
-        // Récupérer du nom du batiment
-        string nomBat = "Laboratoire";
+            // Récupérer du nom du batiment
+            string nomBat = "Laboratoire";
 
             // Vérifier si les informations d'identification sont valides en interrogeant la base de données
             using (SqlConnection connection = new SqlConnection(connectionString))

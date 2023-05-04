@@ -20,12 +20,11 @@ namespace Projet_ABPP
     /// </summary>
     public partial class BatPrincipale : Window
     {
-        private string connectionString = "Server=localhost;Database=ABPP_Csharp;User ID=sa; Password=Info76240#";
         public BatPrincipale()
         {
             InitializeComponent();
 
-            string connectionString = "Server=localhost;Database=ABPP_Csharp;User ID=sa; Password=Info76240#";
+            string connectionString = config.VariablesGlobales.connectionString;
 
             // Récupérer du nom du batiment
             string nomBat = "Bâtiment principal";
