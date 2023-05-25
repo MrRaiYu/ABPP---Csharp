@@ -5,7 +5,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:Projet_ABPP"
     mc:Ignorable="d"
-    Title="Laboratoire" Height="450" Width="800">
+    Title="Laboratoire" Height="470" Width="800">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#FF5EC584" Offset="0.003"/>
@@ -15,10 +15,6 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid Margin="8,0,6,0">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="19*"/>
-            <RowDefinition Height="198*"/>
-        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
@@ -35,16 +31,20 @@
             </Image.RenderTransform>
         </Image>
 
-        <StackPanel Margin="10,27,393,313" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+        <StackPanel Margin="10,59,393,281" RenderTransformOrigin="0.5,0.5">
             <TextBlock x:Name="Emp" Text="{Binding Emp}" FontSize="20" Foreground="White" FontStretch="ExtraCondensed" Background="{x:Null}" TextWrapping="Wrap" Width="391" Height="48" FontFamily="Bahnschrift Condensed"/>
         </StackPanel>
         <StackPanel Margin="10,192,383,35" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
-            <TextBlock x:Name="desc" Text="{Binding desc}" FontSize="20" Foreground="White" FontStretch="ExtraCondensed" Background="{x:Null}" TextWrapping="Wrap" Width="391" Height="204" FontFamily="Bahnschrift Condensed"/>
+            <TextBlock x:Name="desc" Text="{Binding desc}" FontSize="20" Foreground="White" FontStretch="ExtraCondensed" Background="{x:Null}" TextWrapping="Wrap" Width="391" Height="135" FontFamily="Bahnschrift Condensed"/>
+        </StackPanel>
+        <StackPanel Margin="211,351,269,24" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <TextBlock x:Name="hab" Text="{Binding hab}" FontSize="20" Foreground="White" FontStretch="ExtraCondensed" Background="{x:Null}" TextWrapping="Wrap" Width="375" Height="22" FontFamily="Bahnschrift Condensed"/>
         </StackPanel>
         <Button Content="Modifier" HorizontalAlignment="Left" Margin="666,14,0,0" VerticalAlignment="Top" Height="38" Width="92" Click="modifier" Grid.RowSpan="2"/>
-        <Image Margin="0,15,748,373" Source="/Image/back.png" Stretch="Fill" MouseDown="Back" Grid.RowSpan="2"/>
+        <Image Margin="0,15,748,395" Source="/Image/back.png" Stretch="Fill" MouseDown="Back"/>
         <TextBlock HorizontalAlignment="Left" Height="62" Margin="404,16,0,0" TextWrapping="Wrap" Text="Laboratoire" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold" Grid.RowSpan="2"/>
         <TextBlock HorizontalAlignment="Left" Height="38" Margin="43,16,0,0" TextWrapping="Wrap" Text="Emplacement" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold" Grid.RowSpan="2"/>
-        <TextBlock HorizontalAlignment="Left" Height="38" Margin="43,130,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold" Grid.Row="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="38" Margin="43,106,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold" Grid.Row="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="0,349,0,0" TextWrapping="Wrap" Text="Personnes habilitées :" VerticalAlignment="Top" Width="206" Background="{x:Null}" Foreground="White" FontSize="20" FontFamily="Carlito" FontWeight="Bold" Grid.Row="1"/>
     </Grid>
 </Window>

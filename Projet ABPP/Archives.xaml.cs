@@ -28,10 +28,9 @@ namespace Projet_ABPP
 
             string connectionString = config.VariablesGlobales.connectionString;
 
-            // Récupérer du nom du batiment
             string nomBat = "Archives";
 
-            // Vérifier si les informations d'identification sont valides en interrogeant la base de données
+            // Construire la requête SQL pour la description
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 // Construire la requête SQL pour la description
@@ -48,6 +47,7 @@ namespace Projet_ABPP
                 desc.Text = descBat;
             }
 
+            // Récupérer l'emplacement du batiment
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 // Construire la requête SQL pour la description
@@ -63,16 +63,23 @@ namespace Projet_ABPP
 
                 Emp.Text = EmpBat;
             }
-        }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
+            //Récupérer les personnes habilités à ce batiment
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                // Construire la requête SQL pour les personnes habilités
+                string PSemp = "ABPP_ReadHabBatiment";
+                SqlCommand command = new SqlCommand(PSemp, connection);
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@NomBat", nomBat);
 
-        }
+                // Ouvrir la connexion et exécuter la requête
+                connection.Open();
+                string habBat = (string)command.ExecuteScalar();
+                connection.Close();
 
-        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
-        {
-
+                hab.Text = habBat;
+            }
         }
 
         private void modifier(object sender, RoutedEventArgs e)

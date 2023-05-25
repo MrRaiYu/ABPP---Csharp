@@ -26,10 +26,9 @@ namespace Projet_ABPP
 
             string connectionString = config.VariablesGlobales.connectionString;
 
-            // Récupérer du nom du batiment
             string nomBat = "Parking";
 
-            // Vérifier si les informations d'identification sont valides en interrogeant la base de données
+            //Récupérer la description du batiment
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 // Construire la requête SQL pour la description
@@ -46,9 +45,10 @@ namespace Projet_ABPP
                 desc.Text = descBat;
             }
 
+            //Récupérer l'emplacement du batiment
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                // Construire la requête SQL pour la description
+                // Construire la requête SQL pour l'emplacement
                 string PSemp = "ABPP_ReadEmpBatiment";
                 SqlCommand command = new SqlCommand(PSemp, connection);
                 command.CommandType = System.Data.CommandType.StoredProcedure;
@@ -60,6 +60,23 @@ namespace Projet_ABPP
                 connection.Close();
 
                 Emp.Text = EmpBat;
+            }
+
+            //Récupérer les personnes habilités à ce batiment
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                // Construire la requête SQL pour les personnes habilités
+                string PSemp = "ABPP_ReadHabBatiment";
+                SqlCommand command = new SqlCommand(PSemp, connection);
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@NomBat", nomBat);
+
+                // Ouvrir la connexion et exécuter la requête
+                connection.Open();
+                string habBat = (string)command.ExecuteScalar();
+                connection.Close();
+
+                hab.Text = habBat;
             }
         }
 

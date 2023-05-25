@@ -7,7 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
-
+        <Label Content="Verif Badge" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" FontSize="72"/>
+        <ComboBox x:Name="Per" HorizontalAlignment="Left" Margin="152,195,0,0" VerticalAlignment="Top" Width="120" ItemsSource="{Binding Per}"/>
+        <ComboBox x:Name="Bat" HorizontalAlignment="Center" Margin="0,195,0,0" VerticalAlignment="Top" Width="120" ItemsSource="{Binding Bat}"/>
+        <Button Content="Tester" HorizontalAlignment="Left" Margin="626,185,0,0" VerticalAlignment="Top" Click="Test" Height="41" Width="64" FontSize="20"/>
+        <Label x:Name="Result" Content="En attente de test" HorizontalAlignment="Center" Margin="0,275,0,0" VerticalAlignment="Top" FontSize="48" Foreground="Gray"/>
     </Grid>
 </Window>

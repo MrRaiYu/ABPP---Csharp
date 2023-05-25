@@ -5,7 +5,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:Projet_ABPP"
     mc:Ignorable="d"
-    Title="Parking" Height="450" Width="800">
+    Title="Parking" Height="470" Width="800">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#FF5EC584" Offset="0.003"/>
@@ -34,13 +34,17 @@
         <StackPanel Margin="10,66,393,298" RenderTransformOrigin="0.5,0.5">
             <TextBlock x:Name="Emp" Text="{Binding Emp}" FontSize="20" Foreground="White" FontStretch="ExtraCondensed" Background="{x:Null}" TextWrapping="Wrap" Width="391" Height="48" FontFamily="Bahnschrift Condensed"/>
         </StackPanel>
-        <StackPanel Margin="0,212,393,15" RenderTransformOrigin="0.5,0.5">
-            <TextBlock x:Name="desc" Text="{Binding desc}" FontSize="20" Foreground="White" FontStretch="ExtraCondensed" Background="{x:Null}" TextWrapping="Wrap" Width="391" Height="204" FontFamily="Bahnschrift Condensed"/>
+        <StackPanel Margin="10,192,383,35" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <TextBlock x:Name="desc" Text="{Binding desc}" FontSize="20" Foreground="White" FontStretch="ExtraCondensed" Background="{x:Null}" TextWrapping="Wrap" Width="391" Height="135" FontFamily="Bahnschrift Condensed"/>
+        </StackPanel>
+        <StackPanel Margin="211,389,10,-14" RenderTransformOrigin="0.5,0.5">
+            <TextBlock x:Name="hab" Text="{Binding hab}" FontSize="20" Foreground="White" FontStretch="ExtraCondensed" Background="{x:Null}" TextWrapping="Wrap" Width="569" Height="22" FontFamily="Bahnschrift Condensed"/>
         </StackPanel>
         <Button Content="Modifier" HorizontalAlignment="Left" Margin="650,14,0,0" VerticalAlignment="Top" Height="38" Width="92" Click="modifier"/>
         <Image Margin="0,15,748,373" Source="/Image/back.png" Stretch="Fill" MouseDown="Back"/>
         <TextBlock HorizontalAlignment="Left" Height="62" Margin="404,16,0,0" TextWrapping="Wrap" Text="Parking" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="38" Margin="43,16,0,0" TextWrapping="Wrap" Text="Emplacement" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Height="38" Margin="43,168,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="38" Margin="43,106,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Width="246" Background="{x:Null}" Foreground="White" FontSize="36" FontFamily="Carlito" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="0,387,0,0" TextWrapping="Wrap" Text="Personnes habilitées :" VerticalAlignment="Top" Width="206" Background="{x:Null}" Foreground="White" FontSize="20" FontFamily="Carlito" FontWeight="Bold"/>
     </Grid>
 </Window>
